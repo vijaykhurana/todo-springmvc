@@ -4,7 +4,7 @@
 
    <artifactId>todo-springmvc</artifactId>
    <groupId>org.vnoss</groupId>
-   <version>0.1-SNAPSHOT</version>
+   <version>0.1.10-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <name>TodoList sample Spring MVC</name>
@@ -25,58 +25,6 @@
       <velocityVersion>1.5</velocityVersion>
       <simpleobjectassemblerVersion>0.4.4</simpleobjectassemblerVersion>
    </properties>
-
-   <build>
-      <!--<defaultGoal>install</defaultGoal>-->
-      <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-               <source>${javaVersion}</source>
-               <target>${javaVersion}</target>
-            </configuration>
-         </plugin>
-         <plugin>
-            <artifactId>maven-eclipse-plugin</artifactId>
-            <configuration>
-               <!--<downloadJavadocs>true</downloadJavadocs>-->
-               <!--<downloadSources>false</downloadSources>-->
-            </configuration>
-         </plugin>
-      </plugins>
-   </build>
-
-   <repositories>
-      <repository>
-         <id>spring-milestone</id>
-         <url>http://maven.springframework.org/milestone</url>
-      </repository>
-      <!--<repository>
-         <id>spring-snapshot</id>
-         <url>http://s3.amazonaws.com/maven.springframework.org/snapshot</url>
-      </repository>-->
-      <repository>
-         <id>sun-maven2</id>
-         <url>http://download.java.net/maven/2</url>
-      </repository>
-      <repository>
-         <id>jboss</id>
-         <url>http://repository.jboss.com/maven2</url>
-      </repository>
-      <repository>
-         <id>codehaus</id>
-         <url>http://repository.codehaus.org/</url>
-      </repository>
-      <repository>
-         <id>atlassian</id>
-         <url>http://maven.atlassian.com/repository/public</url>
-      </repository>
-      <repository>
-         <id>powermock-repo</id>
-         <url>http://powermock.googlecode.com/svn/repo</url>
-      </repository>
-   </repositories>
 
    <dependencies>
       <!-- TEST AND DB -->
@@ -239,6 +187,58 @@
          <version>1.2.15</version>
       </dependency>
    </dependencies>
+
+   <build>
+      <!--<defaultGoal>install</defaultGoal>-->
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <configuration>
+               <source>${javaVersion}</source>
+               <target>${javaVersion}</target>
+            </configuration>
+         </plugin>
+         <plugin>
+            <artifactId>maven-eclipse-plugin</artifactId>
+            <configuration>
+               <!--<downloadJavadocs>true</downloadJavadocs>-->
+               <!--<downloadSources>false</downloadSources>-->
+            </configuration>
+         </plugin>
+      </plugins>
+   </build>
+
+   <repositories>
+      <repository>
+         <id>spring-milestone</id>
+         <url>http://maven.springframework.org/milestone</url>
+      </repository>
+      <!--<repository>
+         <id>spring-snapshot</id>
+         <url>http://s3.amazonaws.com/maven.springframework.org/snapshot</url>
+      </repository>-->
+      <repository>
+         <id>sun-maven2</id>
+         <url>http://download.java.net/maven/2</url>
+      </repository>
+      <repository>
+         <id>jboss</id>
+         <url>http://repository.jboss.com/maven2</url>
+      </repository>
+      <repository>
+         <id>codehaus</id>
+         <url>http://repository.codehaus.org/</url>
+      </repository>
+      <repository>
+         <id>atlassian</id>
+         <url>http://maven.atlassian.com/repository/public</url>
+      </repository>
+      <repository>
+         <id>powermock-repo</id>
+         <url>http://powermock.googlecode.com/svn/repo</url>
+      </repository>
+   </repositories>
 
    <developers>
       <developer>
