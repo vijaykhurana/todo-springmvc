@@ -1,22 +1,23 @@
-//TO CHECKOUT THE SOURCE CODE FROM THE TRUNK
+//SOME svn COMMANDS
 svn checkout http://todo-springmvc.googlecode.com/svn/trunk/ myFolderToDo
+svn import https://todo-springmvc.googlecode.com/svn/trunk --username mygoogleacc --password myGoogleCodeDotComPasswd
+svn commit myFile https://todo-springmvc.googlecode.com/svn/trunk/myFolder --username mygoogleacc
 
-//TO CONVERT TO ECLIPSE PROJECT (AND DOWNLOAD DEPENDENCIES)
+//SOME mvn COMMANDS
 mvn eclipse:eclipse
-
-//TO BUILD THE WAR
 mvn clean package
-
-//TO INSTALL TO MAVEN LOCAL REPOS
 mvn install -Dmaven.test.skip=true
 
-//TO IMPORT (ADD NEW) A FOLDER RECURSIVELY
-svn import myFolder https://todo-springmvc.googlecode.com/svn/trunk/myFolder --username mygoogleacc --password myGoogleCodeDotComPasswd
+//CODING CONVENTION
++ generally Sun - http://java.sun.com/docs/codeconv/html/CodeConvTOC.doc.html
++ 3 spaces as unit indentation, each tab is replaced by 3 spaces also
++ wrap lines longer than 120 chars, 1 space before condition and open brace
++ open brace as same line, close brace next newline (else, catch, finally, etc)
++ follow best practices: KISS, YAGNI, DRY, DRW, CoC, Open-Close OOP, etc
++ inform others before modifying their code
 
-//TO CHECKIN (COMMIT) A FILE 
-svn commit myFile https://todo-springmvc.googlecode.com/svn/trunk/myFolder  --username mygoogleacc --password myGoogleCodeDotComPasswd
+//DATABASE CONFIGURATION todo-web.properties, applicationContext.xml, pom.xml
++ default DB: MySQL 'todo' (app) and 'todo_test' (test)
++ can be switched to PostgreSQL, SQLite, Oracle, DB2, SqlServer, etc
 
-//TO BECOME A CONTRIBUTOR FOR THIS PROJECT
-mailto:quoc383011@gmail.com
-
-
+//FEEDBACK - mailto:quoc383011@gmail.com
