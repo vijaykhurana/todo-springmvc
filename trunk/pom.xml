@@ -7,7 +7,7 @@
    <version>0.1-SNAPSHOT</version>
    <packaging>pom</packaging>
 
-   <name>TODO-LIST sample project</name>
+   <name>TODO-LIST sample Spring MVC</name>
    <description>To-do list management</description>
    <url>http://forum.vnoss.org</url>
 
