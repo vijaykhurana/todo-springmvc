@@ -4,15 +4,14 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.vnoss.todo.dao.domain.TodoItem;
 
 public class TodoItemDtoTest {
 
-   TodoItem underTest;
+   TodoItemDto underTest;
 
    @Before
    public void setUp() {
-      underTest = new TodoItem();
+      underTest = new TodoItemDto();
    }
 
    @Test
