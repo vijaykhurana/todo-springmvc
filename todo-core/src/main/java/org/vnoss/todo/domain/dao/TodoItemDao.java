@@ -4,4 +4,6 @@ import org.vnoss.todo.domain.TodoItem;
 
 public interface TodoItemDao extends GenericDao<TodoItem> {
 
+   boolean exists(Long id);
+
 }
