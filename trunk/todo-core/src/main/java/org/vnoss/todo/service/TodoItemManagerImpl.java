@@ -31,34 +31,53 @@ public class TodoItemManagerImpl implements TodoItemManager {
    //
    // BREADS
    //
+   @Transactional(readOnly=true)
    public List<TodoItemDto> browse() {
-      List<TodoItem> todoItems = todoItemDao.findAll();
+      List<TodoItem> domainItems = todoItemDao.findAll();
 
       List<TodoItemDto> dtos = new ArrayList<TodoItemDto>();
-      for (TodoItem todoItem : todoItems) {
-         dtos.add(objectAssembler.assemble(todoItem, TodoItemDto.class));
+      for (TodoItem domain : domainItems) {
+         dtos.add(objectAssembler.assemble(domain, TodoItemDto.class));
       }
       return dtos;
    }
 
-   public Long retrieve(TodoItemDto todoItem) {
-      return null;
+   @Transactional(readOnly=true)
+   public TodoItemDto retrieve(Long id) {
+      TodoItem domain = todoItemDao.findById(id);
+      TodoItemDto dto = objectAssembler.assemble(domain, TodoItemDto.class);
+      return dto;
    }
 
    public Long edit(TodoItemDto todoItem) {
-      return null;
+      TodoItem domain = objectAssembler.assemble(todoItem, TodoItem.class);
+      todoItemDao.save(domain);
+      return domain.getId();
    }
 
    public Long add(TodoItemDto todoItem) {
-      return null;
+      TodoItem domain = objectAssembler.assemble(todoItem, TodoItem.class);
+      todoItemDao.save(domain);
+      return domain.getId();
    }
 
-   public Long delete(TodoItemDto todoItem) {
-      return null;
+   public Long delete(Long id) {
+      if (todoItemDao.exists(id) == false) {
+         return null;
+      }
+      todoItemDao.remove(id);
+      return id;
    }
 
+   @Transactional(readOnly=true)
    public List<TodoItemDto> search() {
-      return null;
+      List<TodoItem> domainItems = todoItemDao.findAll();
+
+      List<TodoItemDto> dtos = new ArrayList<TodoItemDto>();
+      for (TodoItem domain : domainItems) {
+         dtos.add(objectAssembler.assemble(domain, TodoItemDto.class));
+      }
+      return dtos;
    }
 
    //

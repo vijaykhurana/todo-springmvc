@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.orm.ObjectRetrievalFailureException;
 
 /**
- * Trivial generic base class Domain Access Object
+ * Generic base class Domain Access Object
  * 
  * @param <MODEL>
  * @author bibo (quoc383011@gmail.com)

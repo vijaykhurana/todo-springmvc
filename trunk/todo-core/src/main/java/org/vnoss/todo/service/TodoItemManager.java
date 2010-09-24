@@ -27,10 +27,10 @@ public interface TodoItemManager {
    /**
     * Retrieves the item.
     * 
-    * @param todoItem
+    * @param id
     * @return
     */
-   Long retrieve(TodoItemDto todoItem);
+   TodoItemDto retrieve(Long id);
 
    /**
     * Edits the item.
@@ -54,7 +54,7 @@ public interface TodoItemManager {
     * @param todoItem
     * @return
     */
-   Long delete(TodoItemDto todoItem);
+   Long delete(Long id);
 
    // BREADS is better than BREAD, right ;) ? 
    List<TodoItemDto> search();

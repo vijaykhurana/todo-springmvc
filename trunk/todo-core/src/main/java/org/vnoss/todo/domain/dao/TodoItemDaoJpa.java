@@ -15,4 +15,9 @@ public class TodoItemDaoJpa extends GenericDaoJpa<TodoItem> implements TodoItemD
       super.setEntityManagerFactory(entityManagerFactory);
    }
 
+   public boolean exists(Long id) {
+      TodoItem result = getJpaTemplate().find(TodoItem.class, id);
+      return (result != null);
+   }
+
 }
