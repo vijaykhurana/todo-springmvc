@@ -1,10 +1,9 @@
-package org.vnoss.todo.dao.domain;
+package org.vnoss.todo.domain;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.vnoss.todo.dao.domain.TodoItem;
 
 public class TodoItemTest {
 

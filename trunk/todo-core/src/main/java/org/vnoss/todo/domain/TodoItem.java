@@ -1,4 +1,4 @@
-package org.vnoss.todo.dao.domain;
+package org.vnoss.todo.domain;
 
 public class TodoItem {
 
