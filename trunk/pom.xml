@@ -4,7 +4,7 @@
 
    <artifactId>todo-springmvc</artifactId>
    <groupId>org.vnoss</groupId>
-   <version>0.1.10-SNAPSHOT</version>
+   <version>0.1.11-SNAPSHOT</version>
    <packaging>pom</packaging>
 
    <name>TodoList sample Spring MVC</name>
@@ -243,8 +243,8 @@
    <developers>
       <developer>
          <id>ducquoc</id>
-         <name>Duc Quoc</name>
-         <email>quoc383011@gmail.com</email>
+         <name>Duc Quoc (quoc383011@gmail.com)</name>
+         <email>ducquoc.vn@gmail.com</email>
          <organization>Vietnam OSS Advocate and Practitioner</organization>
          <organizationUrl>http://forum.vnoss.org/</organizationUrl>
          <roles>
