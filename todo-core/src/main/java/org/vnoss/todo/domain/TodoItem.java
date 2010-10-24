@@ -1,16 +1,28 @@
 package org.vnoss.todo.domain;
 
-public class TodoItem {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-   private long id;
+@Entity
+@Table(name = "todo_item")
+public class TodoItem implements Persistable {
 
+   private static final long serialVersionUID = -1908998671749898606L;
+
+   @Id
+   @Column(name = "todo_item_id")
+   private Long id;
+
+   @Column(name = "title")
    private String title;
 
-   public long getId() {
+   public Long getId() {
       return id;
    }
 
-   public void setId(long id) {
+   public void setId(Long id) {
       this.id = id;
    }
 

@@ -17,7 +17,7 @@ public class TodoItemTest {
    @Test
    public void testSetterGetterId() {
       underTest.setId(99l);
-      assertEquals(99l, underTest.getId());
+      assertEquals(Long.valueOf(99l), underTest.getId());
    }
 
    @Test

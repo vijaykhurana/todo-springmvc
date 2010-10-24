@@ -1,0 +1,383 @@
+/** Main shared CSS for the todo webapp */
+@charset "UTF-8";
+
+html {
+   overflow-y: scroll;
+   background: #5f5f5f url('../img/html_bg.png') repeat-x scroll;
+}
+
+body {
+   margin: 0;
+   padding: 0 0 20px;
+   background: transparent url('../img/body_bg.jpg') no-repeat center
+      top;
+   min-height: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: small;
+}
+
+#wrapper {
+   margin: 0 auto;
+   width: 956px;
+   position: relative;
+   /* 
+   background: url('../img/body_footer_bg.jpg') no-repeat center bottom;
+   padding-bottom: 365px;
+    */
+}
+
+#banner {
+   height: 125px;
+}
+
+#content .bg {
+   opacity: 0;
+   -moz-opacity: 0;
+   filter: alpha(opacity =                           0);
+}
+
+h1,h2,h3,h4 {
+   color: #AD1216;
+   line-height: 1.4em;
+}
+
+.slogan {
+   font-family: "Times New Roman";
+   font-style: italic;
+   font-weight: bolder;
+   font-size: 14px;
+   color: #fff;
+   text-align: center;
+   background-color: #000;
+   margin: 20px;
+}
+
+/* Logo
+   -------------------------------- */
+h1.logo {
+   position: absolute;
+   top: 55px;
+   left: 28px;
+   margin: 0;
+}
+
+h1.logo,h1.logo a {
+   width: 235px;
+   height: 55px;
+}
+
+h1.logo a {
+   display: block;
+   background: url('../img/logo.jpg') no-repeat;
+}
+
+h1.logo a span {
+   display: none;
+}
+
+/* Dock
+   -------------------------------- */
+#dock {
+   height: 25px;
+   float: left;
+   position: absolute;
+   top: 0;
+   right: 2px;
+}
+
+#dock .left {
+   float: left;
+   width: 3px;
+   height: 25px;
+   background: url('../img/dock.png') no-repeat left top;
+}
+
+#dock .right {
+   float: left;
+   width: 3px;
+   height: 25px;
+   background: url('../img/dock.png') no-repeat right top;
+}
+
+#dock ul,#dock ul li {
+   float: left;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+#dock ul {
+   padding: 0 6px;
+   height: 25px;
+   background-color: #000;
+}
+
+#dock ul li {
+   padding: 0 6px;
+   position: relative;
+}
+
+#dock ul li a {
+   float: left;
+   display: block;
+   padding: 0 5px;
+   color: #ccc;
+   text-decoration: none;
+   font-size: 12px;
+   line-height: 22px;
+}
+
+#dock ul li a:hover,#dock ul li.selected a {
+   color: #fff;
+   border-bottom: 2px solid #ff9c08;
+}
+
+#dock ul li.selected a {
+   font-weight: bold;
+}
+
+/* Navigation
+   -------------------------------- */
+#navigation {
+   height: 41px;
+   float: left;
+   position: absolute;
+   top: 62px;
+   right: 0px;
+}
+
+#navigation .left {
+   float: left;
+   width: 5px;
+   height: 41px;
+   /* background: url('../img/navigation.png') no-repeat left top; */
+   background: url('../img/navigation_l.png') no-repeat left top;
+}
+
+#navigation .right {
+   float: left;
+   width: 3px;
+   height: 41px;
+   background: url('../img/navigation.png') no-repeat right top;
+}
+
+#navigation ul,#navigation ul li {
+   float: left;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   font-size: 13px;
+   line-height: 38px;
+}
+
+#navigation ul {
+   height: 41px;
+   background: url('../img/navigation.png') repeat-x 0 -41px;
+}
+
+#navigation ul li a {
+   float: left;
+   display: block;
+   height: 41px;
+   padding: 0 18px;
+   color: #ccc;
+   text-decoration: none;
+   background: url('../img/navigation_s.png') no-repeat right top;
+}
+
+#navigation ul li.selected a {
+   color: #fff;
+}
+
+#navigation ul li.last a {
+   background-image: none;
+}
+
+#navigation ul li a:hover {
+   color: #fff;
+}
+
+/* Content
+   -------------------------------- */
+#content-wrapper {
+   background: #FFF url('../img/content_bg.png') repeat-y 0 0;
+}
+
+#content {
+   background: url('../img/content_body_bg.png') no-repeat 0 13px;
+   zoom: 1;
+   color: #00529c;
+}
+
+.content-top {
+   font-size: 1px;
+   height: 13px;
+   background: url('../img/content_top_bg.png');
+}
+
+.content {
+   padding: 0 3px 0 3px;
+   overflow: hidden;
+}
+
+#content .content {
+   min-height: 380px;
+   background: url('../img/dot.png') repeat-y 203px 0;
+}
+
+#home #content {
+   background: none;
+}
+
+#wrapper #content-wrapper {
+   background: #fff url('../img/bg-home-top.gif') no-repeat 0 0;
+   padding-bottom: 10px;
+}
+
+#home #content {
+   
+}
+
+#home-content-wrapper {
+   padding: 48px 35px 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#home-content-wrapper img {
+   border: 0;
+}
+
+#ie6 #content .content {
+   height: 380px;
+   overflow-y: visible;
+}
+
+/* Layout */
+.content-head {
+   height: 74px;
+   border-bottom: 1px solid #ccc;
+   background-color: #fff;
+}
+
+.content-head h2 {
+   float: left;
+   margin: 0;
+   padding: 20px 0 20px 24px;
+   color: #ff9c08;
+   font: normal 29px/ 30px Arial, Helvetica, sans-serif;
+}
+
+.content-head h2 span {
+   padding-right: 16px;
+   border-right: 1px solid #ccc;
+}
+
+.content-head p {
+   margin: 0;
+   padding: 28px 0 0 12px;
+   float: left;
+   font: bold 15px Arial, Helvetica, sans-serif;
+}
+
+/* Layout
+   -------------------------------- */
+.layout-grid {
+   width: 100%;
+}
+
+.layout-grid td {
+   vertical-align: top;
+}
+
+.layout-grid td.left-nav {
+   width: 200px;
+}
+
+.layout-grid td.normal {
+   border-left: 1px solid #eee;
+   padding: 20px 24px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Side Menu
+   -------------------------------- */
+.section {
+   padding: 24px 23px 8px 22px;
+   border-bottom: 1px dashed #ccc;
+}
+
+ul.side-menu,ul.side-menu li,p.side-menu-title {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+ul.side-menu li a {
+   font: normal 11px Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: #000;
+}
+
+ul.side-menu li a:hover {
+   color: #e87b10;
+}
+
+p.side-menu-title {
+   font: bold 15px Arial, Helvetica, sans-serif;
+   color: #e87b10;
+}
+
+ul.side-menu {
+   padding: 5px 2px 0;
+}
+
+table {
+   width: 100%;
+   padding: 0px;
+   border: none;
+   border: 1px solid #789DB3;
+}
+
+td {
+   font-size: 12px;
+   border: none;
+   vertical-align: middle;
+   padding-left: 7px;
+}
+
+tr.row0 {
+   background-color: #A9F9FD;
+}
+
+tr.row1 {
+   background-color: #E4F5FC;
+}
+
+.input_form {
+   padding-left: 70px;
+}
+
+.label {
+   float: left;
+   font-weight: bold;
+   width: 180px;
+}
+
+.input_field {
+   margin-bottom: 0.3em;
+   margin-left: 180px;
+}
+
+.formstyles {
+   color: #00529C;
+   font-family: inherit;
+   font-size: inherit;
+   width: 200px;
+}
+
+/*=========================== Errors =============================*/
+.label_error {
+   color: red;
+   margin-left: 5px;
+   font-style: italic;
+}

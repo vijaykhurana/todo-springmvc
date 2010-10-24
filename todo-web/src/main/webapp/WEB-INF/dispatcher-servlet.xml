@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context" 
+   xmlns:tx="http://www.springframework.org/schema/tx"
+   xmlns:p="http://www.springframework.org/schema/p"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+   <context:annotation-config/>
+   <context:component-scan base-package="org.vnoss.todo.controller"/>
+
+   <bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
+      <property name="mediaTypes">
+         <map>
+            <entry key="atom" value="application/atom+xml"/>
+            <entry key="do" value="text/html"></entry>
+            <entry key="json" value="application/json"></entry>
+         </map>
+      </property>
+
+      <property name="viewResolvers">
+         <list>
+            <bean id="viewResolver"
+                  class="org.springframework.web.servlet.view.InternalResourceViewResolver"
+                  p:prefix="/WEB-INF/view/jsp/" p:suffix=".jsp"/>
+         </list>
+      </property>
+   </bean>
+
+   <!--<bean id="urlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+      <property name="mappings">
+         <props>
+            <prop key="/lists">listController</prop>
+            <prop key="/users">userController</prop>
+         </props>
+      </property>
+   </bean>-->
+
+</beans>
