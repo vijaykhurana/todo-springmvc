@@ -11,7 +11,7 @@ import org.vnoss.todo.service.dto.TodoItemDto;
  * because those BREAD operations cover more of what CRUD do in common. Besides,
  * the word "bread" is more sensible, and sounds more fulfilling than "crud" ! 
  * 
- * @author bibo (quoc383011@gmail.com)
+ * @author ducquoc (ducquoc.vn@gmail.com)
  * @see org.appfuse.service.GenericManager
  */
 public interface TodoItemManager {

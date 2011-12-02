@@ -20,4 +20,4 @@ mvn install -Dmaven.test.skip=true
 + default DB: MySQL 'todo' (app) and 'todo_test' (test)
 + can be switched to PostgreSQL, SQLite, Oracle, DB2, SqlServer, etc
 
-//FEEDBACK - mailto:quoc383011@gmail.com
+//FEEDBACK - mailto:ducquoc.vn@gmail.com , mailto:quoc383011@gmail.com 
