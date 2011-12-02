@@ -11,7 +11,7 @@ import org.vnoss.todo.domain.Persistable;
  * For the implementation using EntityManager, see GenericManager
  * 
  * @param <MODEL>
- * @author bibo (quoc383011@gmail.com)
+ * @author bibo (bibobibo.vn@gmail.com)
  * @see org.appfuse.dao.jpa.GenericDaoJpa
  */
 public class GenericDaoJpa<MODEL> extends JpaDaoSupport implements GenericDao<MODEL> {

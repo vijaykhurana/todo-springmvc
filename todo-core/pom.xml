@@ -75,7 +75,7 @@
       </dependency>
 
       <dependency>
-         <groupId>com.googlecode</groupId>
+         <groupId>com.googlecode.simpleobjectassembler</groupId>
          <artifactId>simpleobjectassembler</artifactId>
          <version>${simpleobjectassemblerVersion}</version>
       </dependency>

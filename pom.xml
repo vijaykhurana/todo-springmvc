@@ -23,7 +23,7 @@
       <hibernateVersion>3.4.0.GA</hibernateVersion>
       <servletApiVersion>2.5</servletApiVersion>
       <velocityVersion>1.5</velocityVersion>
-      <simpleobjectassemblerVersion>0.4.4</simpleobjectassemblerVersion>
+      <simpleobjectassemblerVersion>1.0.0</simpleobjectassemblerVersion>
    </properties>
 
    <dependencies>
@@ -184,7 +184,7 @@
       <dependency>
          <groupId>log4j</groupId>
          <artifactId>log4j</artifactId>
-         <version>1.2.15</version>
+         <version>1.2.16</version>
       </dependency>
    </dependencies>
 
@@ -219,8 +219,9 @@
          <url>http://s3.amazonaws.com/maven.springframework.org/snapshot</url>
       </repository>-->
       <repository>
-         <id>sun-maven2</id>
+         <id>maven2-repository.java.net</id>
          <url>http://download.java.net/maven/2</url>
+         <layout>default</layout>
       </repository>
       <repository>
          <id>jboss</id>
@@ -243,12 +244,36 @@
    <developers>
       <developer>
          <id>ducquoc</id>
-         <name>Duc Quoc (quoc383011@gmail.com)</name>
+         <name>Duc Quoc (ducquoc.vn@gmail.com)</name>
          <email>ducquoc.vn@gmail.com</email>
-         <organization>Vietnam OSS Advocate and Practitioner</organization>
-         <organizationUrl>http://forum.vnoss.org/</organizationUrl>
+         <organization>Vietnam Open source software</organization>
+         <organizationUrl>http://vnoss.org</organizationUrl>
          <roles>
             <role>Project Owner</role>
+         </roles>
+         <timezone>+7</timezone>
+      </developer>
+      <developer>
+         <id>bibo</id>
+         <name>Bi Bo (bibobibo.vn@gmail.com)</name>
+         <email>bibobibo.vn@gmail.com</email>
+         <organization>Vietnam Open source software</organization>
+         <organizationUrl>http://vnoss.org</organizationUrl>
+         <roles>
+            <role>Scrum Master</role>
+            <role>Developer</role>
+         </roles>
+         <timezone>+7</timezone>
+      </developer>
+      <developer>
+         <id>dquoc</id>
+         <name>D Quoc (quoc383011@gmail.com)</name>
+         <email>quoc383011@gmail.com</email>
+         <organization>Vietnam Open source software</organization>
+         <organizationUrl>http://vnoss.org</organizationUrl>
+         <roles>
+            <role>Quality Assurance</role>
+            <role>Developer</role>
          </roles>
          <timezone>+7</timezone>
       </developer>

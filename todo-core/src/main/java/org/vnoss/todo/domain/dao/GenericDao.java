@@ -8,7 +8,7 @@ import org.springframework.orm.ObjectRetrievalFailureException;
  * Generic base class Domain Access Object
  * 
  * @param <MODEL>
- * @author bibo (quoc383011@gmail.com)
+ * @author ducquoc (ducquoc.vn@gmail.com)
  * @see org.appfuse.dao.GenericDao
  */
 public interface GenericDao<MODEL> {
