@@ -4,7 +4,9 @@ svn import https://todo-springmvc.googlecode.com/svn/trunk --username mygoogleac
 svn commit myFile https://todo-springmvc.googlecode.com/svn/trunk/myFolder --username mygoogleacc
 
 //SOME mvn COMMANDS
-mvn eclipse:eclipse
+mvn archetype:create -DarchetypeArtifactId -DartifactId=dq -DgroupId=vn.ducquoc
+mvn archetype:generate
+mvn eclipse:eclipse -Dwtpversion=2.0
 mvn clean package
 mvn install -Dmaven.test.skip=true
 
